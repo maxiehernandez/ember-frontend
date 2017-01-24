@@ -1,8 +1,10 @@
 <h1>Monsters</h1>
 <div class="monsters-index-list">
   {{#each model as |monster|}}
-    <div class="monster">
+    <div class="monster {{if monster.active 'dark'}}">
       lvl {{monster.level}} {{monster.name}}
+      <br>
+      <button {{action 'toggleActive' monster}}>Toggle Active</button>
     </div>
   {{/each}}
 </div>

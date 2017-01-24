@@ -7,3 +7,7 @@
   border: 1px solid black;
   font-size: 30px;
 }
+
+.monster.dark {
+  background-color: #aad;
+}
